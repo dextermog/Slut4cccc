@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="page1">
+        <h1>Christine, will you be my Valentine? ❤️</h1>
+        <div class="buttons">
+            <button id="yesButton" onclick="nextPage('page2')">Yes</button>
+            <button id="noButton" onmouseover="moveNoButton()" disabled>No</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <h1>Really? Are you sure? 😊</h1>
+        <div class="buttons">
+            <button id="yesButton2" onclick="nextPage('page3')">Yes!</button>
+            <button id="noButton2" onmouseover="moveNoButton()" disabled>No</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="page3">
+        <h1>I can’t wait to spend Valentine's with you! 💖</h1>
+        <p>I love you so much, Christine. You mean everything to me. 🌹</p>
+        <div class="hearts">
+            ❤️❤️❤️
+        </div>
+    </div>
+
+    <div class="hearts-background"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
